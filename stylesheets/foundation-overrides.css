@@ -1,0 +1,89 @@
+/* Foundation styles overrides */
+
+blockquote, cite, h1, h2, h3, h4, h5 {
+	font-family: 'Merriweather', Georgia, serif;
+	font-weight: bold;
+}
+
+.top-bar{
+	background-color: orange;
+}
+
+.left-button a{
+	background-color: orange !important;
+}
+.fixed-margin-top{
+	margin-top: 500px;
+}
+
+.fillphoto{ 
+	width: 100%;
+}
+
+.leadphoto{
+	background-image: url('http://www.voxmagazine.com/wp-content/uploads/2014/09/SB-54_web.jpg');
+	height: 550px;
+	width: 100%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: 0 -230px;
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+
+
+}
+
+.intro {
+	font-size: 1.4em;
+	line-height: 1.8em;
+	font-family: 'Merriweather', Georgia, serif;
+	-webkit-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+
+}
+
+.intro:hover{
+	color: red;
+	transition: all 0.5s ease-in;
+}
+
+.whiteout{
+	background-color: white;
+	padding-top: 50px;
+}
+
+blockquote {
+	font-size: 2em;
+	border-left: 0;
+	text-align: center;
+
+}
+
+h1, h2, h3, h4, h5 {
+	color: #0CA8E8;
+}
+
+@media only screen and (max-width: 640px) {
+	.fillphoto {
+		border: 10px dashed red;
+		background-color: green;
+
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.leadphoto {
+		background-position: 0 0px;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+	.leadphoto {
+		background-position: 0 -400px;
+	}
+}
